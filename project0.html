@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alesander Campbell - Discovery Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>Alesander</strong> <span>Campbell</span></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="bio.html">About</a></li>
+						<li><a href="engineering.html">Engineering</a></li>
+						<li><a href="photography.html">Photography</a></li>
+						<li><a href="generic.html">Contact Me</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Facial Recognition Door Lock</h1>
+									</header>
+									<span class="image main"><img src="images/setup0.jpg" alt="" /></span>
+									
+									<h2 id="content" class= "col-4 col-12-medium">Problem</h2>
+									<p>Taking my keys, remembering to not lose my keys, and opening the door with my keys got quite annoying and boring. So, with machine learning, a servo motor, camera, and raspberry pi, I wanted to design a system that would automate my door lock via facial recognition.</p>
+									<p>There were several challenges to overcome. Firstly, I needed to configure a library that could recognize my face and send a message to my motor to turn a certain degree. My solution was to use a popular github repo for the library and store photos I have of myself into the file system. I programmed the camera to take periodic snapshots of what it was seeing and compared it to my library. If there was a match the motor was signaled to either open or close the door lock. Another issue was finding the right motor. Knowing that motor type - servo - would be the best fit for precise turning, researching a catalogue of motors was necessary. My first choice had a weaker output of torque so I had to upgrade to what is shown in my final setup.</p>
+									<h2 id="content">Results</h2>
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/scan1.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/scan2.png" alt="" /></span></div>
+									</div>
+									<p>The results above show the results from the facial recognition library and snapshots from my camera. The "known" photos I decided to give the raspberry pi had a mixture of me wearing both glasses or not wearing glasses. This allowed me to have successful results whenever I chose to wear the lens. The motor was able to both lock and unlock my door allowing me to access my room at will.</p>
+						
+									<h2 id="content">Reflections</h2>
+									<p>Prior to this project I had never gotten to have hands on experience with some of these tools before. Using machine learning and working with a raspberry pi was completely new to me and was an amazing experience. Finally having an opportunity to get started in the field of engineering was a good way for me to narrow down what I am liking or disliking. From this project alone I have been able to realize that the world Machine Learning, and Digital Systems would be an interesting avenue to look into.</p>
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/alesanderc" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.github.com/remii5" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/_alesander_c" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+						
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
